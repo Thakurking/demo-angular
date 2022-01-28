@@ -6,10 +6,6 @@ node{
     stage('Install node modules'){
         sh "npm install"
     }
-
-    stage('Test'){
-        sh "npm run test"
-    }
     
     stage('Build'){
         sh 'ng build'
